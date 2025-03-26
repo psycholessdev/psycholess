@@ -1,10 +1,27 @@
+@import "tailwindcss";
+
 :root {
   --background: #0F0F0F;
   --card: #1A1A1A;
-  --primary: #9600C8;
+  --primary: #B0FE76;
+  --primary-2: #4F772D;
   --subtext: #88888C;
-  --accent-1: #2E2E2E;
-  --accent-2: #333333;
+  --bkg-1: #2E2E2E;
+  --bkg-2: #333333;
+}
+
+/* fonts */
+.font-inknut {
+  font-family: var(--font-inknut-antiqua);
+}
+
+.font-ubuntu {
+  font-family: var(--font-ubuntu);
+}
+
+.drag-none{
+  user-drag: none;
+  -webkit-user-drag: none;
 }
 
 html,
@@ -14,7 +31,7 @@ body {
 }
 
 *::selection {
-  background: rgba(150, 0, 200, 0.42);
+  background: rgba(79, 119, 45, 0.42);
 }
 
 body {
@@ -24,5 +41,5 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(225deg, rgba(15,15,15,1) 0%, rgba(37,36,39,1) 100%);
+  background: linear-gradient(225deg, #000000 0%, #0F0F0F 100%);
 }
