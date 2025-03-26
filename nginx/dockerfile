@@ -1,16 +1,3 @@
-FROM nginx:mainline-alpine
-
-# Install required packages for HTTP/3 (QUIC)
-RUN apk add --no-cache \
-    nginx-mod-http-geoip2 \
-    nginx-mod-http-image-filter \
-    nginx-mod-http-headers-more \
-    nginx-mod-http-lua \
-    nginx-mod-http-ndk \
-    nginx-mod-http-perl \
-    nginx-mod-http-xslt-filter \
-    nginx-mod-mail \
-    nginx-mod-stream \
-    nginx-mod-stream-geoip2
+FROM ghcr.io/nginx/unit:1.30.0-minimal
 
 CMD ["nginx", "-g", "daemon off;"]
