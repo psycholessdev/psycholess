@@ -1,7 +1,11 @@
 import React from 'react'
 import {motion} from "motion/react"
 
-const AnimatedToast: React.FC = ({ children }) => {
+interface IAnimatedToast {
+    children: React.ReactNode;
+}
+
+const AnimatedToast: React.FC<IAnimatedToast> = ({ children }) => {
     return (
         <motion.div
             initial={{opacity: 0, scale: 0.8, y: 30}}

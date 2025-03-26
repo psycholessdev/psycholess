@@ -2,7 +2,11 @@
 import * as motion from "motion/react-client"
 import React, { useRef } from "react"
 
-const ImageAnimationFrame: React.FC = ({ children }) => {
+interface IImageAnimationFrame {
+    children: React.ReactNode
+}
+
+const ImageAnimationFrame: React.FC<IImageAnimationFrame> = ({ children }) => {
     const constraintsRef = useRef<HTMLDivElement>(null)
 
     return (

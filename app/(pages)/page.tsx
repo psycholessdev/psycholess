@@ -40,7 +40,7 @@ export default function Home() {
                                 officialSite="https://en.wikipedia.org/wiki/TypeScript"
                                 image={typescriptIcon}
                                 name="Typescript">
-                                <b>TypeScript</b> A robust version of JavaScript that helps us build complex websites with fewer errors. This means faster development, a more reliable website, and ultimately, less time and money spent on fixing problems down the road. It's like having a quality control system built into the development process.
+                                <b>TypeScript</b> A robust version of JavaScript that helps us build complex websites with fewer errors. This means faster development, a more reliable website, and ultimately, less time and money spent on fixing problems down the road. It&apos;s like having a quality control system built into the development process.
                             </Skill>
                             <Skill
                                 officialSite="https://en.wikipedia.org/wiki/PHP"
@@ -58,7 +58,7 @@ export default function Home() {
                                 officialSite="https://en.wikipedia.org/wiki/Next.js"
                                 image={nextjsIcon}
                                 name="Next.js">
-                                <b>Next.js</b> A framework built on React that allows us to create faster, more SEO-friendly websites. This means your website will load quickly for visitors and rank higher in search engine results, bringing in more potential customers. It's like giving your website a boost in speed and visibility.
+                                <b>Next.js</b> A framework built on React that allows us to create faster, more SEO-friendly websites. This means your website will load quickly for visitors and rank higher in search engine results, bringing in more potential customers. It&apos;s like giving your website a boost in speed and visibility.
                             </Skill>
                             <Skill
                                 officialSite="https://en.wikipedia.org/wiki/React_(software)"
@@ -70,7 +70,7 @@ export default function Home() {
                                 officialSite="https://en.wikipedia.org/wiki/MySQL"
                                 image={mysqlIcon}
                                 name="MySQL">
-                                <b>MySQL</b> reliable database system for storing and managing your website's data. MySQL ensures your customer data, product information, and website content are stored securely and efficiently. This allows for quick retrieval of information, ensuring a smooth and personalized experience for your users, and secure data management.
+                                <b>MySQL</b> reliable database system for storing and managing your website&apos;s data. MySQL ensures your customer data, product information, and website content are stored securely and efficiently. This allows for quick retrieval of information, ensuring a smooth and personalized experience for your users, and secure data management.
                             </Skill>
                             <Skill
                                 officialSite="https://en.wikipedia.org/wiki/Tailwind_CSS"

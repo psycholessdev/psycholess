@@ -8,6 +8,7 @@ interface ISkill {
     image: StaticImageData | string
     name: string
     officialSite: string
+    children: React.ReactNode
 }
 
 const Skill: React.FC<ISkill> = ({ image, name, children, officialSite }) => {
