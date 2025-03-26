@@ -4,11 +4,11 @@ services:
     build: .
     container_name: psycholess-site
     restart: always
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
 
   nginx:
-    image: nginx:mainline
+    image: openquantumsafe/nginx-quic
     build:
       context: ./nginx
     container_name: nginx-proxy
