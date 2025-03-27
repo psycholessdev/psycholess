@@ -7,7 +7,7 @@ interface IImageAnimationFrame {
 }
 
 const ImageAnimationFrame: React.FC<IImageAnimationFrame> = ({ children }) => {
-    const constraintsRef = useRef<HTMLDivElement>(null)
+    const constraintsRef = useRef<HTMLDivElement | null>(null)
 
     return (
         <motion.div

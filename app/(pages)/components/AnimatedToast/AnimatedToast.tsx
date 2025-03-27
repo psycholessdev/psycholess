@@ -12,7 +12,7 @@ const AnimatedToast: React.FC<IAnimatedToast> = ({ children }) => {
             animate={{opacity: 1, scale: 1, y: 0}}
             exit={{opacity: 0, scale: 0.8, y: 30}}
             transition={{ duration: 0.15 }}
-            className="font-ubuntu absolute bottom-[60px] h-auto[50px] w-[300px] p-3 rounded-lg bg-[#1A1A1A] border-[1px] border-[#333333] text-white cursor-auto"
+            className="font-ubuntu absolute bottom-[60px] h-auto[50px] w-[300px] p-3 rounded-lg bg-[#1A1A1A] border-[1px] border-[#333333] text-white cursor-auto z-100"
             key="box"
         >{children}</motion.div>
     )

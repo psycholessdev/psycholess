@@ -17,19 +17,19 @@ export default function Home() {
         <>
             <Header/>
             <div className="w-full h-[100vh] flex flex-col">
-                <div className="w-full h-full flex flex-col pt-[93px]">
+                <div className="w-full h-full flex flex-col lg:pt-[93px] pt-[66px]">
 
                     <div className="w-full h-full flex justify-end">
-                        <div className="w-full h-full grid-pattern"/>
+                        <div className="w-full h-full lg:[background-size:100px_100px] md:[background-size:85px_85px] sm:[background-size:70px_70px] [background-size:80px_80px] [background-image:linear-gradient(#282828_1px,#0000_0),linear-gradient(90deg,#282828_1px,#0000_0)]"/>
                         <Avatar/>
                     </div>
 
-                    <div className="w-full h-auto flex flex-col box-border mx-[84px] py-[50px]">
+                    <div className="h-auto flex flex-col box-border lg:mx-[84px] sm:mx-[40px] mx-[25px] lg:py-[50px] sm:py-[15px] py-[18px]">
                         <div
-                            className="font-inknut text-7xl text-white font-medium leading-[100%] pb-[25px] select-none">Fullstack
+                            className="font-inknut lg:text-7xl md:text-5xl sm:text-5xl text-4xl text-white font-medium leading-[100%] lg:py-[25px] md:py-[20px] sm:py-[24px] py-[25px] select-none">Fullstack
                             Web Developer
                         </div>
-                        <div className="flex items-center gap-[12px]">
+                        <div className="flex flex-wrap items-center w-full lg:gap-[12px] gap-[6px]">
                             <Skill
                                 officialSite="https://en.wikipedia.org/wiki/JavaScript"
                                 image={javascriptIcon}
@@ -83,7 +83,7 @@ export default function Home() {
                 </div>
                 <hr className="mx-[50px] text-[#333333]"/>
                 <div
-                    className="flex gap-3 w-full py-[30px] px-[84px] bg-[linear-gradient(0deg,rgba(26,26,26,1)_0%,rgba(26,26,26,0)_100%)]">
+                    className="flex gap-3 w-full lg:py-[30px] md:py-[20px] py-[12px] lg:mx-[84px] sm:mx-[40px] mx-[25px] bg-[linear-gradient(0deg,rgba(26,26,26,1)_0%,rgba(26,26,26,0)_100%)]">
                     <LinkButton
                         href="https://t.me/imapsycholess"
                         icon="/icons/telegram-icon.png"
