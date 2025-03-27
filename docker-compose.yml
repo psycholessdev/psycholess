@@ -6,20 +6,9 @@ services:
     restart: always
     expose:
       - "3000"
+    networks:
+      - web_network
 
-  nginx:
-    image: openquantumsafe/nginx-quic
-    build:
-      context: ./nginx
-    container_name: nginx-proxy
-    ports:
-      - "80:80"
-      - "443:443"
-      - "443:443/udp"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - /etc/letsencrypt/live:/etc/letsencrypt/live:ro
-      - /etc/letsencrypt/archive:/etc/letsencrypt/archive:ro
-    depends_on:
-      - psycholess-site
-    restart: unless-stopped
+networks:
+  web_network:
+    external: true
