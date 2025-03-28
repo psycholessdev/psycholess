@@ -1,8 +1,8 @@
 version: '3'
 services:
-  psycholess-site:
+  psycholess-backend:
     build: .
-    container_name: psycholess-site
+    container_name: psycholess-backend
     restart: always
     expose:
       - "3000"
