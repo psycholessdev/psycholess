@@ -212,7 +212,7 @@ export default function Home() {
                 <div
                     className="flex gap-3 w-full lg:py-[30px] md:py-[20px] py-[12px] lg:mx-[84px] sm:mx-[40px] mx-[25px]">
                     <LinkButton
-                        href="https://t.me/imapsycholess"
+                        href="https://t.me/psycholessdev"
                         icon="/icons/telegram-icon.png"
                         label="Telegram"
                         newTab={true}
