@@ -24,7 +24,7 @@ const Fact: React.FC<IFact> = ({ icon, title, children }) => {
         <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="flex items-center relative cursor-help">
+            className="flex items-center relative select-none cursor-help">
             <AnimatePresence initial={false}>
                 {children && hovered ? (
                     <AnimatedToast>
@@ -32,6 +32,7 @@ const Fact: React.FC<IFact> = ({ icon, title, children }) => {
                             <Image
                                 src={icon}
                                 alt="icon"
+                                className="select-none drag-none"
                                 width={26}
                                 height={26}
                             />
@@ -46,6 +47,7 @@ const Fact: React.FC<IFact> = ({ icon, title, children }) => {
             <Image
                 src={icon}
                 alt="icon"
+                className="select-none drag-none"
                 width={20}
                 height={20}
             />
@@ -53,6 +55,7 @@ const Fact: React.FC<IFact> = ({ icon, title, children }) => {
             {children ? <Image
                 src="icons/more-info.svg"
                 alt="more info icon"
+                className="select-none drag-none"
                 width={15}
                 height={15}
             /> : null}
