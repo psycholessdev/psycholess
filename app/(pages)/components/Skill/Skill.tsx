@@ -2,7 +2,7 @@
 import { AnimatePresence } from "motion/react"
 import React, { useState } from "react"
 import Image, { StaticImageData } from "next/image"
-import AnimatedToast from "@/app/(pages)/components/AnimatedToast";
+import AnimatedToast from "@/app/ui/components/AnimatedToast"
 
 interface ISkill {
     image: StaticImageData | string
@@ -26,7 +26,7 @@ const Skill: React.FC<ISkill> = ({ image, name, children, officialSite }) => {
         <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="relative bg-[#1A1A1A] lg:px-[16px] px-[12px] lg:py-[10px] md:py-[5px] py-[2px] border-1 border-[#333333] rounded-full flex justify-center items-center cursor-help hover:border-[#595959]">
+            className={`relative lg:px-[16px] px-[12px] lg:py-[10px] md:py-[5px] py-[2px] border-1 border-[#333333] rounded-full flex justify-center items-center cursor-help ${hovered ? 'border-[#595959]' : ''}`}>
             <AnimatePresence initial={false}>
                 {hovered ? (
                     <AnimatedToast>

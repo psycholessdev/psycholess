@@ -2,11 +2,11 @@
 import * as motion from "motion/react-client"
 import React, { useRef } from "react"
 
-interface IImageAnimationFrame {
+interface IDragAnimation {
     children: React.ReactNode
 }
 
-const ImageAnimationFrame: React.FC<IImageAnimationFrame> = ({ children }) => {
+const DragAnimation: React.FC<IDragAnimation> = ({ children }) => {
     const constraintsRef = useRef<HTMLDivElement | null>(null)
 
     return (
@@ -23,4 +23,4 @@ const ImageAnimationFrame: React.FC<IImageAnimationFrame> = ({ children }) => {
         </motion.div>
     )
 }
-export default ImageAnimationFrame
+export default DragAnimation
