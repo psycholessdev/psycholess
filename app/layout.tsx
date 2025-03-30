@@ -15,7 +15,7 @@ const ubuntu = Ubuntu({
 })
 
 export const metadata: Metadata = {
-    title: "Fullstack Web Developer - Psycholess",
+    title: "Full-stack Web Developer - Psycholess",
     description: "Experienced Web Developer's personal page for recruiters and others",
     keywords: ['web', 'fullstack', 'developer', 'react', 'next.js', 'typescript', 'javascript'],
     applicationName: 'Psycholess',

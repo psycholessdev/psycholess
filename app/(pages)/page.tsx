@@ -24,7 +24,7 @@ export default function Home() {
                     <div
                         className="h-auto flex flex-col box-border lg:mx-[84px] sm:mx-[40px] mx-[25px] lg:pb-[20px] pb-[10px]">
                         <h1
-                            className="font-inknut bg-clip-text [-webkit-text-fill-color:transparent] bg-[linear-gradient(180deg,#ffffff,#adadad)] lg:text-7xl md:text-5xl sm:text-5xl text-4xl text-white font-medium leading-[100%] select-none">Fullstack
+                            className="font-inknut bg-clip-text [-webkit-text-fill-color:transparent] bg-[linear-gradient(180deg,#ffffff,#adadad)] lg:text-7xl md:text-5xl sm:text-5xl text-4xl text-white font-medium leading-[100%] select-none">Full-stack
                             Web Developer
                         </h1>
                         <div className="relative">
