@@ -91,7 +91,7 @@ export default function Home() {
                                 <h2
                                     className="font-ubuntu text-xl text-white mb-3">Skills
                                 </h2>
-                                <div className="flex flex-wrap items-center w-full gap-[6px]">
+                                <div className="flex flex-wrap items-center w-full sm:gap-[6px] gap-[3px]">
                                     <Skill
                                         officialSite="https://en.wikipedia.org/wiki/JavaScript"
                                         image="/images/skills-software/javascript.png"
