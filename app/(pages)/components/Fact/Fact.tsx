@@ -24,7 +24,7 @@ const Fact: React.FC<IFact> = ({ icon, title, children }) => {
         <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="flex items-center relative select-none cursor-help">
+            className="flex items-center relative cursor-help">
             <AnimatePresence initial={false}>
                 {children && hovered ? (
                     <AnimatedToast>
@@ -51,7 +51,7 @@ const Fact: React.FC<IFact> = ({ icon, title, children }) => {
                 width={20}
                 height={20}
             />
-            <div className="font-ubuntu text-sm text-[#88888C] mx-[6px]">{title}</div>
+            <div className="font-ubuntu text-sm text-[#88888C] mx-[6px] select-none">{title}</div>
             {children ? <Image
                 src="icons/more-info.svg"
                 alt="more info icon"

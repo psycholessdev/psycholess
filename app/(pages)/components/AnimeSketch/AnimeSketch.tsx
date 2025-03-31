@@ -6,7 +6,8 @@ const AnimeSketch = () => {
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.99 }}
-            animate={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2, ease: 'easeOut' }}
             className="absolute sm:left-0 -left-10 sm:bottom-2 bottom-8 lg:w-[490px] md:w-[360px] sm:w-[330px] w-[250px] lg:h-[490px] md:h-[360px] sm:h-[330px] h-[250px]">
             <Image

@@ -32,7 +32,8 @@ export default function Home() {
                         </div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            whileInView={{ opacity: 1, scale: 1 }}
                             transition={{
                                 duration: 0.4,
                                 ease: 'easeInOut'
@@ -44,7 +45,8 @@ export default function Home() {
                         <div>
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{
                                     duration: 0.4,
                                     ease: 'easeInOut',
@@ -56,7 +58,7 @@ export default function Home() {
                                         <Fact icon="/icons/country.svg" title="Russia">
                                             Residing in Russia, open to relocation globally.
                                         </Fact>
-                                        <Fact icon="/icons/keyboard.svg" title="Full-Stack Web Developer">
+                                        <Fact icon="/icons/keyboard.svg" title="Computer Sience">
                                             Proficient in building scalable and efficient web applications using a modern technology stack.
                                         </Fact>
                                         <Fact icon="/icons/language.svg" title="Russian, English">
@@ -72,14 +74,15 @@ export default function Home() {
                                         <Fact icon="/images/skills-software/forward-slash.png" title="API Design and Development">
                                             Designed and implemented RESTful APIs following best practices for scalability and maintainability.
                                         </Fact>
-                                        <Fact icon="/icons/time.svg" title="Highly experienced with: JS/TS, React"/>
+                                        <Fact icon="/icons/wrench.svg" title="Highly experienced with: JS/TS, React"/>
                                     </div>
                                 </Borders>
                             </motion.div>
 
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{
                                     duration: 0.4,
                                     ease: 'easeInOut',
@@ -163,6 +166,12 @@ export default function Home() {
                                         design.
                                     </Skill>
                                     <Skill
+                                        officialSite="https://en.wikipedia.org/wiki/SQL"
+                                        image="/images/skills-software/database_icon.png"
+                                        name="SQL">
+                                        Think of <b>SQL</b> as the language we use to manage and organize all the information on your website, like product details, customer information, and inventory. It&lsquo;s the engine that allows us to quickly access, update, and analyze your data. This means faster loading times for your customers, accurate information displayed on your site, and the ability for you to easily track your business performance.  By using SQL, we ensure your website is efficient, reliable, and data-driven, helping you make informed business decisions
+                                    </Skill>
+                                    <Skill
                                         officialSite="https://en.wikipedia.org/wiki/MySQL"
                                         image="/images/skills-software/mysql.png"
                                         name="MySQL">
@@ -192,6 +201,12 @@ export default function Home() {
                                         higher-quality website for you.
                                     </Skill>
                                     <Skill
+                                        officialSite="https://www.linkedin.com/company/linearapp"
+                                        image="/images/skills-software/linear-app.png"
+                                        name="Linear">
+                                        <b>Linear</b> is a project management system that helps us stay organized and efficient while building and maintaining your website. It&lsquo;s like a central hub where we track every task, bug fix, and new feature. This means better communication, fewer missed deadlines, and ultimately, a faster turnaround time for your project.  With Linear, you can rest assured that your website is being developed in a structured and transparent way, leading to a more reliable and feature-rich online presence.
+                                    </Skill>
+                                    <Skill
                                         officialSite="https://en.wikipedia.org/wiki/REST"
                                         image="/images/skills-software/cloud-white.png"
                                         name="RESTful API">
@@ -218,7 +233,7 @@ export default function Home() {
                         newTab={true}
                     />
                     <LinkButton
-                        href="https://github.com/req-dev"
+                        href="https://github.com/psycholessdev"
                         icon="/icons/github-icon.png"
                         label="GitHub"
                         newTab={true}

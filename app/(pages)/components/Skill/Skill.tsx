@@ -26,7 +26,7 @@ const Skill: React.FC<ISkill> = ({ image, name, children, officialSite }) => {
         <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className={`relative lg:px-[16px] px-[12px] lg:py-[10px] md:py-[5px] py-[2px] border-1 border-[#333333] rounded-full flex justify-center items-center select-none cursor-help ${hovered ? 'border-[#595959]' : ''}`}>
+            className={`relative lg:px-[16px] px-[12px] lg:py-[10px] md:py-[5px] py-[2px] border-1 border-[#333333] rounded-full flex justify-center items-center cursor-help ${hovered ? 'border-[#595959]' : ''}`}>
             <AnimatePresence initial={false}>
                 {hovered ? (
                     <AnimatedToast>
@@ -45,7 +45,7 @@ const Skill: React.FC<ISkill> = ({ image, name, children, officialSite }) => {
                         {children}
                         <br />
                         <a
-                            className="text-[#4F772D] hover:underline"
+                            className="text-[#4F772D] hover:underline select-none"
                             href={officialSite}
                             target="_blank">Learn more</a>
                     </AnimatedToast>
