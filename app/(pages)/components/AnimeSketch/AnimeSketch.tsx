@@ -9,7 +9,7 @@ const AnimeSketch = () => {
             viewport={{ once: true }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2, ease: 'easeOut' }}
-            className="absolute sm:left-0 -left-10 sm:bottom-2 bottom-8 lg:w-[490px] md:w-[360px] sm:w-[330px] w-[250px] lg:h-[490px] md:h-[360px] sm:h-[330px] h-[250px]">
+            className="absolute sm:left-0 -left-5 lg:-bottom-15 md:-bottom-10 -bottom-8 lg:w-[490px] md:w-[360px] sm:w-[310px] w-[240px] lg:h-[490px] md:h-[360px] sm:h-[310px] h-[240px]">
             <Image
                 src="/images/sketch_effect.png"
                 fill

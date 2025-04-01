@@ -14,14 +14,14 @@ export default function LinkButton({ href, icon, label, newTab}: ILinkButton) {
         <Link
             href={href}
             target={newTab ? "_blank" : undefined}
-            className="flex items-center bg-[#4F772D] lg:px-[20px] px-[12px] lg:py-[10px] py-[5px] rounded-2xl cursor-pointer outline-[#B0FE76] hover:outline active:opacity-85">
+            className="flex items-center bg-[#B0FE76] lg:px-[20px] px-[12px] lg:py-[10px] py-[5px] rounded-2xl select-none cursor-pointer hover:opacity-80 active:opacity-60">
             <Image
                 className="mr-[8px] select-none drag-none"
                 src={icon}
                 width={28}
                 height={28}
                 alt="tg icon" />
-            <div className="font-ubuntu text-white lg:text-xl">{label}</div>
+            <div className="font-ubuntu text-black lg:text-xl select-none">{label}</div>
             <Image
                 className="ml-[8px] select-none drag-none"
                 src="/icons/open_in_new.svg"
